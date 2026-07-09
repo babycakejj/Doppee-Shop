@@ -3,12 +3,12 @@ Resource         ${CURDIR}/../resources/import.robot
 Suite Teardown    Browser.Close Browser
 
 *** Test Cases ***
-TC003 - ข้ามขั้นตอนอัพโหลดรูป และ subscribe
+TC003 - เปลี่ยนภาษาของหน้าเว็บ
     [Documentation]    Author : Kornnisa
     common.Open website
 
-    # Browser.Click    css=button:has(span:has-text("EN"))
-    # Browser.Click    css=button:has(span:has-text("TH"))
+    Browser.Click    css=button:has(span:has-text("EN"))
+    Browser.Click    css=button:has(span:has-text("TH"))
 
 
     common.Handle random popup
