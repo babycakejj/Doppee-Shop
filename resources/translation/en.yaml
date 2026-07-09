@@ -1,0 +1,34 @@
+signin_page_translation:
+  signin: "Sign in"
+  create_account: "Create account"
+
+create_account_page_translation:
+  create_account: "Create account"
+  
+home_page_translation:
+  view_all: "View all"
+
+cart_page_translation:
+  coupon: "Coupon"
+  apply: "Apply"
+  select_all: "Select all"
+  subtotal: "Subtotal"
+  shipping: "Shipping"
+  vat: "VAT (7%)"
+  total: "Total"
+
+product_detail_page_translation:
+  color: "Color"
+  size: "Size"
+  subtotal: "Subtotal"
+  vat: "VAT (7%)"
+  total: "Total (incl. VAT)"
+  add_to_cart: "Add to cart"
+
+navigatebar_translation:
+  profile: "Profile"
+  order: "Orders"
+  coupon: "Coupons"
+  signout: "Sign out"
+  signin: "Sign in"
+

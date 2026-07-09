@@ -1,0 +1,17 @@
+{
+  "product": {
+    "category": "Accessories",
+    "description": "UV-protection shades",
+    "id": 6,
+    "image_url": "/uploads/sunglasses.jpg",
+    "name": "Sunglasses",
+    "price_cents": 80000,
+    "price_cents_incl_vat": 85600,
+    "rating_average": 0.0,
+    "rating_count": 0,
+    "sku": "SUN-GLS",
+    "stock_qty": 50,
+    "vat_baht": 56,
+    "vat_cents": 5600
+  }
+}

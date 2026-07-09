@@ -1,0 +1,88 @@
+{
+  "coupons": [
+    {
+      "code": "SAVE10",
+      "discount_apply_on": "ex_vat",
+      "discount_cents": null,
+      "discount_percent": 10,
+      "eligible_product_ids": null,
+      "remaining_per_user_this_month": null,
+      "remaining_this_month": 200,
+      "type": "general",
+      "valid_from": "2026-06-19T13:05:33.392352+07:00",
+      "valid_until": "2026-09-17T13:05:33.392352+07:00"
+    },
+    {
+      "code": "SAVE15",
+      "discount_apply_on": "ex_vat",
+      "discount_cents": null,
+      "discount_percent": 15,
+      "eligible_product_ids": null,
+      "remaining_per_user_this_month": null,
+      "remaining_this_month": 150,
+      "type": "general",
+      "valid_from": "2026-06-19T13:05:33.395029+07:00",
+      "valid_until": "2026-09-17T13:05:33.395029+07:00"
+    },
+    {
+      "code": "FLAT50",
+      "discount_apply_on": "ex_vat",
+      "discount_cents": 5000,
+      "discount_percent": null,
+      "eligible_product_ids": null,
+      "remaining_per_user_this_month": null,
+      "remaining_this_month": 100,
+      "type": "general",
+      "valid_from": "2026-06-19T13:05:33.396642+07:00",
+      "valid_until": "2026-09-17T13:05:33.396642+07:00"
+    },
+    {
+      "code": "WELCOME20",
+      "discount_apply_on": "ex_vat",
+      "discount_cents": null,
+      "discount_percent": 20,
+      "eligible_product_ids": null,
+      "remaining_per_user_this_month": null,
+      "remaining_this_month": 50,
+      "type": "general",
+      "valid_from": "2026-06-19T13:05:33.398566+07:00",
+      "valid_until": "2026-09-17T13:05:33.398566+07:00"
+    },
+    {
+      "code": "FREESHIP",
+      "discount_apply_on": "ex_vat",
+      "discount_cents": 3000,
+      "discount_percent": null,
+      "eligible_product_ids": null,
+      "remaining_per_user_this_month": null,
+      "remaining_this_month": 300,
+      "type": "general",
+      "valid_from": "2026-06-19T13:05:33.400626+07:00",
+      "valid_until": "2026-09-17T13:05:33.400626+07:00"
+    },
+    {
+      "code": "TECH10",
+      "discount_apply_on": "ex_vat",
+      "discount_cents": null,
+      "discount_percent": 10,
+      "eligible_product_ids": null,
+      "remaining_per_user_this_month": null,
+      "remaining_this_month": 100,
+      "type": "product",
+      "valid_from": "2026-06-19T13:05:33.403271+07:00",
+      "valid_until": "2026-09-17T13:05:33.403271+07:00"
+    },
+    {
+      "code": "STYLE5",
+      "discount_apply_on": "ex_vat",
+      "discount_cents": null,
+      "discount_percent": 5,
+      "eligible_product_ids": null,
+      "remaining_per_user_this_month": null,
+      "remaining_this_month": 80,
+      "type": "product",
+      "valid_from": "2026-06-19T13:05:33.407624+07:00",
+      "valid_until": "2026-09-17T13:05:33.407624+07:00"
+    }
+  ]
+}

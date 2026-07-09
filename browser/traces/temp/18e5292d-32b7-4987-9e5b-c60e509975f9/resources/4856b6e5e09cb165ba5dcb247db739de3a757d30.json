@@ -1,0 +1,29 @@
+{
+  "discount_cents": 5000,
+  "discount_display_cents": 5000,
+  "has_out_of_stock": false,
+  "items": [
+    {
+      "id": 66,
+      "line_total_cents": 400000,
+      "options": {
+        "color": "Black"
+      },
+      "product": {
+        "category": "Accessories",
+        "id": 6,
+        "image_url": "/uploads/sunglasses.jpg",
+        "name": "Sunglasses",
+        "price_cents": 80000,
+        "price_cents_incl_vat": 85600
+      },
+      "quantity": 5
+    }
+  ],
+  "shipping_cents": 0,
+  "subtotal_cents": 400000,
+  "total_cents": 395000,
+  "total_incl_vat_cents": 423000,
+  "vat_baht": 280,
+  "vat_cents": 28000
+}

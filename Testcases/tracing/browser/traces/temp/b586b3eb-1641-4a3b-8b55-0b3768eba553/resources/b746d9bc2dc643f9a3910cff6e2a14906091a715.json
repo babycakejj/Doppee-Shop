@@ -1,0 +1,16 @@
+{
+  "user": {
+    "address_line1": null,
+    "address_line2": null,
+    "city": null,
+    "created_at": "2026-07-01T17:46:35.800145+07:00",
+    "email": "hvdU6@doppiotech.com",
+    "full_name": "Firstname Lastname",
+    "id": 1091,
+    "is_admin": false,
+    "phone": "0123456789",
+    "postal_code": null,
+    "state": null,
+    "subdistrict": null
+  }
+}

@@ -1,0 +1,7 @@
+signup_001:
+  signup_page:
+      default_full_name : Firstname Lastname
+      default_phone : 0123456789
+      default_password : Ab123456
+      default_confirm_password_pass : Ab123456
+

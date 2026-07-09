@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.13.14 on darwin)" generated="2026-07-01T17:40:18.117674" rpa="false" schemaversion="5">
+<suite id="s1" name="Doppee-shop" source="/Users/doppio/Doppee-shop">
+<suite id="s1-s1" name="Testcases" source="/Users/doppio/Doppee-shop/Testcases">
+<suite id="s1-s1-s1" name="Add Cart 001" source="/Users/doppio/Doppee-shop/Testcases/add_cart_001.robot">
+<test id="s1-s1-s1-t1" name="add_cart_001 - เลือกสินค้้าที่มีขนาดและสี" line="6">
+<kw name="Open website" owner="common">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-07-01T17:40:18.260021" level="FAIL">Variable '${TIMEOUT}' not found.</msg>
+<arg>browser=chromium</arg>
+<arg>headless=false</arg>
+<arg>timeout=${TIMEOUT}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="FAIL" start="2026-07-01T17:40:18.259777" elapsed="0.001051">Variable '${TIMEOUT}' not found.</status>
+</kw>
+<kw name="New Context" owner="Browser">
+<arg>tracing=true</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.260938" elapsed="0.000051"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<arg>url=${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.261055" elapsed="0.000047"/>
+</kw>
+<doc>เปิด Browser Chromium แบบ headless=false
+สร้าง Browser Context พร้อมเปิด Tracing
+เปิดหน้าเว็บ Doppee Shop ตามค่า ${BASE_URL}</doc>
+<status status="FAIL" start="2026-07-01T17:40:18.259465" elapsed="0.001711">Variable '${TIMEOUT}' not found.</status>
+</kw>
+<kw name="Handle random popup" owner="common">
+<doc>ปิด Popup แบบสุ่มที่จะปรากฎบนหน้าจอ</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.261343" elapsed="0.000082"/>
+</kw>
+<kw name="Click icon profile" owner="navigatebar_page">
+<doc>สำหรับกด icon user บน navigate bar</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.261621" elapsed="0.000074"/>
+</kw>
+<kw name="Click menu sign in" owner="navigatebar_page">
+<doc>สำหรับกดเมนู sign in</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.261810" elapsed="0.000165"/>
+</kw>
+<kw name="Handle random popup" owner="common">
+<doc>ปิด Popup แบบสุ่มที่จะปรากฎบนหน้าจอ</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.262082" elapsed="0.000044"/>
+</kw>
+<kw name="Sign in to doppee shop" owner="signin_feature">
+<arg>email=${add_cart_001.signin_page.correct_email}</arg>
+<arg>password=${add_cart_001.signin_page.correct_password}</arg>
+<status status="NOT RUN" start="2026-07-01T17:40:18.262215" elapsed="0.000037"/>
+</kw>
+<kw name="Handle random popup" owner="common">
+<doc>ปิด Popup แบบสุ่มที่จะปรากฎบนหน้าจอ</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.262341" elapsed="0.000035"/>
+</kw>
+<kw name="Verify login success after create account" owner="navigatebar_page">
+<arg>email=${add_cart_001.signin_page.correct_email}</arg>
+<doc>สำหรับตรวจสอบว่าหลังจากสมัครบัญชีแล้ว ระบบทำการเข้าสู่ระบบให้อัติโนมัติ
+Arguments
+    - ${email} ค่าของ email ที่ต้องการตรวจสอบ เป็น email ที่เพิ่งสมัครบัญชี</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.262483" elapsed="0.000038"/>
+</kw>
+<kw name="Click logo doppee shop" owner="navigatebar_page">
+<doc>สำหรับกดโลโก้ Doopee Shop</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.262605" elapsed="0.000037"/>
+</kw>
+<kw name="CLick to view all products" owner="home_page">
+<doc>สำหรับกดปุ่ม View all ในหน้า Home เพื่อไปยังหน้า Product list page</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.262740" elapsed="0.000047"/>
+</kw>
+<kw name="Select product by name" owner="product_page">
+<arg>product_name=${add_cart_001.product_page.product_name}</arg>
+<doc>สำหรับเลือกสินค้า ตามค่า product_name ที่ส่งเข้ามา
+และมีค่า default เป็น sunglasses ตาม ${product_page.product_name} หากไม่มีการส่งค่ามาช
+Arguments
+    - ${product_name} ชื่อของสินค้า</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.262917" elapsed="0.000039"/>
+</kw>
+<kw name="Configure products details" owner="product_feature">
+<arg>color=${add_cart_001.product_detail_page.product_color}</arg>
+<arg>size=${add_cart_001.product_detail_page.product_size}</arg>
+<arg>product_quantity=${add_cart_001.product_detail_page.quantity_number}</arg>
+<status status="NOT RUN" start="2026-07-01T17:40:18.263046" elapsed="0.000037"/>
+</kw>
+<kw name="Get products value" owner="product_feature">
+<var>${subtotal}</var>
+<var>${total}</var>
+<var>${vat}</var>
+<status status="NOT RUN" start="2026-07-01T17:40:18.263176" elapsed="0.000038"/>
+</kw>
+<kw name="Click Add to Cart" owner="product_detail_page">
+<doc>สำหรับกดเพิ่ม สินค้า เข้าตะกร้า</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.263304" elapsed="0.000035"/>
+</kw>
+<kw name="Verify quantity in cart badge is displayed as expected" owner="navigatebar_page">
+<arg>product_quantity=${add_cart_001.product_detail_page.quantity_number}</arg>
+<doc>สำหรับตรวจสอบจำนวนของในตะกร้าสินค้า</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.263419" elapsed="0.000037"/>
+</kw>
+<kw name="Click icon cart" owner="navigatebar_page">
+<doc>สำหรับกด icon ตะกร้าสินค้า เพื่อไปยังหน้าตะกร้าสินค้า</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.263535" elapsed="0.000036"/>
+</kw>
+<kw name="Click select all products" owner="cart_page">
+<doc>สำหรับกด check box &gt; select all เพื่อทำการเลือกสินค้าทั้งหมดในตะกร้า</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.263656" elapsed="0.000037"/>
+</kw>
+<kw name="Apply coupon" owner="coupon_feature">
+<var>${coupon}</var>
+<arg>coupon=${add_cart_001.cart_page.coupon}</arg>
+<doc>สำหรับกดเลือกคูปอง ตามค่าที่ผู้ใช้ระบุ
+Arguments
+    - ${coupon} โค้ด ของ คูปอง</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.263809" elapsed="0.000039"/>
+</kw>
+<kw name="Get coupon discount" owner="cart_page">
+<var>${type}</var>
+<var>${value}</var>
+<arg>coupon=${add_cart_001.cart_page.coupon}</arg>
+<doc>สำหรับตรวจสอบประเภทของคูปองส่วนลด และแปลงค่าที่ได้ให้อยู่ในรูปแบบตัวเลข
+Arguments
+    - ${coupon} ค่าของ coupon ที่เลือก ตัวอย่าง: -THB1,000 / -10%
+Return
+    - AMOUNT/PERCENT รูปแบบที่ลด
+    - ${discount} มูลค่าที่ลด แปลงเป็นจำนวนทศนิยมแล้ว</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.263989" elapsed="0.000039"/>
+</kw>
+<kw name="Click apply coupon button" owner="cart_page">
+<doc>สำหรับกดปุ่ม Apply เพื่อใช้ coupon ที่เลือก</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.264107" elapsed="0.000046"/>
+</kw>
+<kw name="Calculate shipping fee" owner="cart_page">
+<var>${shipping_fee}</var>
+<arg>subtotal=${subtotal}</arg>
+<doc>สำหรับคำนวณค่าส่ง จากราคาของสินค้าทั้งหมด
+Arguments
+    - ${subtotal} ราคาของสินค้าทั้งหมด
+Return
+    - ${shipping} ค่าจัดส่ง</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.264274" elapsed="0.000097"/>
+</kw>
+<kw name="Calculate discount" owner="cart_page">
+<var>${discount_amount}</var>
+<arg>type=${type}</arg>
+<arg>value=${value}</arg>
+<arg>subtotal=${subtotal}</arg>
+<doc>สำหรับคำนวณมูลค่าส่วนลดจากประเภทของคูปอง
+Arguments
+    - ${type} รูปแบบการลดราคาเป็น AMOUNT/PERCENT
+    - ${value} มูลค่าที่จะลดราคาฃอง
+Return
+    - ${discount} จำนวนเงินส่วนลดที่คำนวณแล้ว</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.264502" elapsed="0.000044"/>
+</kw>
+<kw name="Calculate total after discount" owner="cart_page">
+<var>${total_calculate}</var>
+<arg>subtotal=${subtotal}</arg>
+<arg>vat=${vat}</arg>
+<arg>shipping=${shipping_fee}</arg>
+<arg>discount=${discount_amount}</arg>
+<doc>สำหรับคำนวณยอดรวมสุทธิหลังหักส่วนลด
+Arguments
+    - ${subtotal} ยอดรวมสินค้า
+    - ${vat} ภาษีมูลค่าเพิ่ม
+    - ${shipping} ค่าจัดส่ง
+    - ${discount} ส่วนลดที่คำนวณแล้ว
+Return
+    - ${amount} ยอดรวมสุทธิ</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.264725" elapsed="0.000055"/>
+</kw>
+<kw name="Get total from web display" owner="cart_page">
+<var>${total_web}</var>
+<doc>สำหรับดึงค่า total ยอดรวมสุทธิที่แสดงบนหน้าจอ
+Return
+    - ${total} ยอดรวมสุทธิ</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.264920" elapsed="0.000051"/>
+</kw>
+<kw name="Compare total from calculate and web" owner="cart_page">
+<arg>total_calculate=${total_calculate}</arg>
+<arg>total_web=${total_web}</arg>
+<doc>สำหรับตรวจสอบยอดรวมสุทธิระหว่าง
+total_calculate ค่าที่คาดหวัง
+total_web ค่าที่แสดงบนหน้าจอ</doc>
+<status status="NOT RUN" start="2026-07-01T17:40:18.265058" elapsed="0.000037"/>
+</kw>
+<msg time="2026-07-01T17:40:18.375075" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/Browser/wrapper/index.js using at 127.0.0.1:53544</msg>
+<doc>Author : Kornnisa</doc>
+<tag>test_id:add_cart_001</tag>
+<status status="FAIL" start="2026-07-01T17:40:18.255242" elapsed="0.009959">Variable '${TIMEOUT}' not found.</status>
+</test>
+<status status="FAIL" start="2026-07-01T17:40:18.141989" elapsed="1.589909"/>
+</suite>
+<status status="FAIL" start="2026-07-01T17:40:18.140614" elapsed="1.601189"/>
+</suite>
+<status status="FAIL" start="2026-07-01T17:40:18.121867" elapsed="1.622401"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">test_id:add_cart_001</stat>
+</tag>
+<suite>
+<stat name="Doppee-shop" id="s1" pass="0" fail="1" skip="0">Doppee-shop</stat>
+<stat name="Testcases" id="s1-s1" pass="0" fail="1" skip="0">Doppee-shop.Testcases</stat>
+<stat name="Add Cart 001" id="s1-s1-s1" pass="0" fail="1" skip="0">Doppee-shop.Testcases.Add Cart 001</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-07-01T17:40:18.233316" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/import.robot' on line 6: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-07-01T17:40:18.235712" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/import.robot' on line 9: Replacing variables from setting 'Variables' failed: Variable '${env}' not found.</msg>
+<msg time="2026-07-01T17:40:18.236967" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/import.robot' on line 12: Replacing variables from setting 'Variables' failed: Variable '${lang}' not found.</msg>
+<msg time="2026-07-01T17:40:18.246545" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/locators/cart_locator.robot' on line 6: Setting variable '${cart_locator.btn_apply}' failed: Resolving variable '${cart_page_translation.apply}' failed: Variable '${cart_page_translation}' not found.</msg>
+<msg time="2026-07-01T17:40:18.247785" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/locators/cart_locator.robot' on line 3: Setting variable '${cart_locator.btn_coupon}' failed: Resolving variable '${cart_page_translation.coupon}' failed: Variable '${cart_page_translation}' not found.</msg>
+<msg time="2026-07-01T17:40:18.248786" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/locators/cart_locator.robot' on line 7: Setting variable '${cart_locator.lbl_total}' failed: Resolving variable '${cart_page_translation.total}' failed: Variable '${cart_page_translation}' not found.</msg>
+<msg time="2026-07-01T17:40:18.249602" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/locators/product_detail_locator.robot' on line 7: Setting variable '${product_detail_locator.btn_add_to_cart}' failed: Resolving variable '${product_detail_page_translation.add_to_cart}' failed: Variable '${product_detail_page_translation}' not found.</msg>
+<msg time="2026-07-01T17:40:18.250336" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/locators/product_detail_locator.robot' on line 10: Setting variable '${product_detail_locator.lbl_subtotal}' failed: Resolving variable '${product_detail_page_translation.subtotal}' failed: Variable '${product_detail_page_translation}' not found.</msg>
+<msg time="2026-07-01T17:40:18.251016" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/locators/product_detail_locator.robot' on line 12: Setting variable '${product_detail_locator.lbl_total}' failed: Resolving variable '${product_detail_page_translation.total}' failed: Variable '${product_detail_page_translation}' not found.</msg>
+<msg time="2026-07-01T17:40:18.251730" level="ERROR">Error in file '/Users/doppio/Doppee-shop/resources/locators/product_detail_locator.robot' on line 11: Setting variable '${product_detail_locator.lbl_vat}' failed: Resolving variable '${product_detail_page_translation.vat}' failed: Variable '${product_detail_page_translation}' not found.</msg>
+</errors>
+</robot>

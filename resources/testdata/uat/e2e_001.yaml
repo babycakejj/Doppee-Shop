@@ -1,0 +1,22 @@
+e2e_001:
+    signup_page:
+        default_full_name : Firstname Lastname
+        default_phone : 0123456789
+        default_password : Ab123456
+        default_confirm_password_pass : Ab123456
+
+    profile_page:
+        image_path : /Users/doppio/Downloads/IMG_8932.JPG
+        verify_photo_updated_text : Photo updated! 
+
+    product_page:
+        product_name : Sunglasses
+
+    product_detail_page:
+        product_color : Brown
+        product_size : 39 
+        quantity_number : 5
+
+    cart_page:
+        coupon : FLAT50
+

@@ -1,0 +1,44 @@
+{
+  "provinces": [
+    {
+      "label": "Bangkok",
+      "value": "Bangkok"
+    },
+    {
+      "label": "Chiang Mai",
+      "value": "Chiang Mai"
+    },
+    {
+      "label": "Chiang Rai",
+      "value": "Chiang Rai"
+    },
+    {
+      "label": "Chonburi",
+      "value": "Chonburi"
+    },
+    {
+      "label": "Kanchanaburi",
+      "value": "Kanchanaburi"
+    },
+    {
+      "label": "Khon Kaen",
+      "value": "Khon Kaen"
+    },
+    {
+      "label": "Nonthaburi",
+      "value": "Nonthaburi"
+    },
+    {
+      "label": "Phuket",
+      "value": "Phuket"
+    },
+    {
+      "label": "Songkhla",
+      "value": "Songkhla"
+    },
+    {
+      "label": "Udon Thani",
+      "value": "Udon Thani"
+    }
+  ]
+}

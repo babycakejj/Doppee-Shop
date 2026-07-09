@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": 583,
+      "line_total_cents": 400000,
+      "options": {
+        "color": "Black"
+      },
+      "product": {
+        "id": 6,
+        "name": "Sunglasses",
+        "price_cents": 80000,
+        "price_cents_incl_vat": 85600,
+        "sku": "SUN-GLS",
+        "stock_qty": 50
+      },
+      "quantity": 5
+    }
+  ],
+  "total_cents": 400000,
+  "total_incl_vat_cents": 428000,
+  "vat_baht": 280,
+  "vat_cents": 28000
+}

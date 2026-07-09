@@ -1,0 +1,5 @@
+login_001:
+  signin_page:
+      correct_email : YvPMQI6v@doppiotech.com
+      correct_password : Ab123456
+      wrong_password : Ab1234567

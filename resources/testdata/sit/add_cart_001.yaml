@@ -1,0 +1,16 @@
+add_cart_001:
+  signin_page:
+      correct_email : YvPMQI6v@doppiotech.com
+      correct_password : Ab123456
+      wrong_password : Ab1234567
+
+  product_page:
+    product_name : Classic Tee
+
+  product_detail_page:
+      product_color : White
+      product_size : S
+      quantity_number : 5
+
+  cart_page:
+      coupon : FLAT50

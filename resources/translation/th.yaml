@@ -1,0 +1,33 @@
+signin_page_translation:
+  signin: "เข้าสู่ระบบ"
+  create_account: "Create account"
+
+create_account_page_translation:
+  create_account: "สมัครสมาชิก"
+  
+home_page_translation:
+  view_all: "ดูทั้งหมด"
+
+cart_page_translation:
+  coupon: "คูปอง"
+  apply: "ใช้คูปอง"
+  select_all: "เลือกทั้งหมด"
+  subtotal: "Subtotal"
+  shipping: "Shipping"
+  vat: "VAT (7%)"
+  total: "Total"
+
+product_detail_page_translation:
+  color: "Color"
+  size: "Size"
+  subtotal: "Subtotal"
+  vat: "VAT (7%)"
+  total: "Total (incl. VAT)"
+  add_to_cart: "เพิ่มลงตะกร้า"
+
+navigatebar_translation:
+  profile: "โปรไฟล์"
+  order: "คำสั่งซื้อ"
+  coupon: "คูปอง"
+  signout: "ออกจากระบบ"
+  signin: "เข้าสู่ระบบ"
